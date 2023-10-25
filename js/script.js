@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <input type="text" placeholder="Nom du compteur" class="nomCompteur" value="${nom}">
             <p class="valeurCompteur">${valeur}</p>
             <button class="incrementer">+1</button>
+            <button class="decrementer">-1</button>
             <button class="supprimer">Supprimer</button>
         `;
 
@@ -61,11 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
         const nomCompteurInput = nouveauCompteur.querySelector(".nomCompteur");
         const valeurCompteurP = nouveauCompteur.querySelector(".valeurCompteur");
         const incrementerBtn = nouveauCompteur.querySelector(".incrementer");
+        const decrementerBtn = nouveauCompteur.querySelector(".decrementer");
         const supprimerBtn = nouveauCompteur.querySelector(".supprimer");
 
         incrementerBtn.addEventListener("click", () => {
             const valeurActuelle = parseInt(valeurCompteurP.textContent);
             valeurCompteurP.textContent = valeurActuelle + 1;
+            sauvegarderCompteurs();
+        });
+
+        decrementerBtn.addEventListener("click", () => {
+            const valeurActuelle = parseInt(valeurCompteurP.textContent);
+            valeurCompteurP.textContent = valeurActuelle - 1;
             sauvegarderCompteurs();
         });
 

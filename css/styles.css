@@ -51,3 +51,34 @@ h1 {
     font-weight: 600;
     transition: 0.5s;
 }
+
+/* <input type="text" placeholder="Nom du compteur" class="nomCompteur" value="${nom}">
+            <p class="valeurCompteur">${valeur}</p>
+            <button class="incrementer">+1</button>
+            <button class="supprimer">Supprimer</button> */
+
+.compteur {
+    display: block;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 13%;
+}
+
+.nomCompteur {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.valeurCompteur {
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
