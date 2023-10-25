@@ -34,3 +34,20 @@ h1 {
     font-weight: 600;
     transition: 0.5s;
 }
+
+#ajouterCompteur:hover {
+    color: white;
+    background-color: #253C78;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
