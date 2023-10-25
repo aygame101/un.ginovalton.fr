@@ -1,3 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 h2 {
     display: none;
+}
+
+body {
+    background-color: #253C78;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#ajouterCompteur {
+    color: #253C78;
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+    border-radius: 7px;
+    border: 2px solid #253C78;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
 }
